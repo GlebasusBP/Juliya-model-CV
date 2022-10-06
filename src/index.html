@@ -26,9 +26,85 @@
           </p>
         </div>
         <div class="head-page-panel">
-          <button class="button head-page-panel-btn">Gallery</button>
-          <button class="button head-page-panel-btn">Contacts</button>
+          <button class="button head-page-panel-btn" id="gallary-btn">Gallery</button>
+          <button class="button head-page-panel-btn" id="contacts-btn">Contacts</button>
         </div>
+      </div>
+    </section>
+    <section class="gallary">
+      <div class="container">
+        <div class="slider">
+          <div class="slider-view">
+            <button class="button slider-btn">
+              <img src="assets/images/arrow.svg" alt="back" class="slider-btn-icon__prev">
+            </button>
+            <div class="slider-view-window">
+              <img src="assets/images/1.jpg" alt="1" class="slider-view-image active">
+              <img src="assets/images/2.jpg" alt="2" class="slider-view-image">
+              <img src="assets/images/3.jpg" alt="3" class="slider-view-image">
+              <img src="assets/images/4.jpg" alt="4" class="slider-view-image">
+              <img src="assets/images/5.jpg" alt="5" class="slider-view-image">
+              <img src="assets/images/6.jpg" alt="6" class="slider-view-image">
+              <img src="assets/images/7.jpg" alt="7" class="slider-view-image">
+              <img src="assets/images/8.jpg" alt="8" class="slider-view-image">
+            </div>
+            <button class="button slider-btn">
+              <img src="assets/images/arrow.svg" alt="next" class="slider-btn-icon__next">
+            </button>
+          </div>
+          <div class="head-page-panel">
+            <button class="button head-page-panel-btn" id="home-btn">Home</button>
+            <button class="button head-page-panel-btn" id="contacts-btn">Contacts</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="modal">
+      <div class="modal-wrapper">
+        <h3 class="modal-title">Contacts</h3>
+        <ul class="modal-list">
+          <li class="modal-list-item">
+            <a href="tel:+37120236488" class="modal-list-item-link">
+              <div class="modal-list-item-block">
+                <img src="assets/images/telephone.svg" alt="Telephone" class="modal-list-item-block-icon">
+                <span class="modal-list-item-block-text">+371 20 236488</span>
+              </div>
+            </a>
+          </li>
+          <li class="modal-list-item">
+            <a href="https://telegram.me/Julia_USpain" class="modal-list-item-link" target="_blank">
+              <div class="modal-list-item-block">
+                <img src="assets/images/telegram.svg" alt="Telegram" class="modal-list-item-block-icon">
+                <span class="modal-list-item-block-text">@Julia_USpain</span>
+              </div>
+            </a>
+          </li>
+          <li class="modal-list-item">
+            <a href="https://wa.me/+375336771187" class="modal-list-item-link" target="_blank">
+              <div class="modal-list-item-block">
+                <img src="assets/images/whatsapp.svg" alt="Whatsapp" class="modal-list-item-block-icon">
+                <span class="modal-list-item-block-text">+375 33 677 11 87</span>
+              </div>
+            </a>
+          </li>
+          <li class="modal-list-item">
+            <a href="https://instagram.com/j_ul_s" class="modal-list-item-link" target="_blank">
+              <div class="modal-list-item-block">
+                <img src="assets/images/instagram.svg" alt="Instagram" class="modal-list-item-block-icon">
+                <span class="modal-list-item-block-text">j_ul_s</span>
+              </div>
+            </a>
+          </li>
+          <li class="modal-list-item">
+            <a href="mailto:Juliaspain98@gmail.com" class="modal-list-item-link" target="_blank">
+              <div class="modal-list-item-block">
+                <img src="assets/images/google.svg" alt="Google Mail" class="modal-list-item-block-icon">
+                <span class="modal-list-item-block-text">Juliaspain98@gmail.com</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <button class="button modal-btn" id="modal-btn">Close</button>
       </div>
     </section>
   </main>

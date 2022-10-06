@@ -1,0 +1,38 @@
+.gallary
+  display: none
+  opacity: 0
+  padding: 50px 0 100px 0
+  background: #00000019
+.slider
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 40px
+  &-btn
+    width: 80px
+    height: 80px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    &-icon
+      &__prev
+        width: 40px
+        height: 40px
+        transform: rotate(-90deg)
+      &__next
+        width: 40px
+        height: 40px
+        transform: rotate(90deg)
+  &-view
+    display: flex
+    justify-content: center
+    align-items: center
+    column-gap: 40px
+    &-window
+      width: 380px
+    &-image
+      display: none
+
+.active
+  display: block
