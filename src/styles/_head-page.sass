@@ -2,15 +2,23 @@
   background-image: url('../assets/images/head.jpg')
   background-repeat: no-repeat
   background-size: 100%
-  padding: 80px 0 200px 0
-  &-panel-btn
-    opacity: 0
+  padding: 60px 0 150px 0
+  &-panel
+    width: 100%
+    display: flex
+    justify-content: space-between
+    &-btn
+      opacity: 0
   &-description
+    display: flex
+    flex-direction: column
+    gap: 40px
     width: 550px
-    height: 540px
-    // background: rgba(0, 0, 0, 0.2)
-    // border-radius: 15px
     &-title
+      display: flex
+      flex-direction: column
+      align-items: center
+    &-headtitle
       font-size: 48px
       font-weight: 200
       letter-spacing: 3px
@@ -19,17 +27,16 @@
       text-align: center
       opacity: 0
     &-subtitle
-      font-size: 28px
+      font-size: 30px
       font-weight: 100
       color: #000
       letter-spacing: 8px
       text-shadow: 1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000
       text-align: center
-      margin-bottom: 40px
       opacity: 0
     &-paragraph
       font-family: 'Commissioner', sans-serif
-      font-size: 24px
+      font-size: 22px
       font-weight: 200
       color: #fff
       text-shadow: 1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000
@@ -38,3 +45,21 @@
       border-radius: 15px
       padding: 10px
       opacity: 0
+
+#about-btn
+  display: none
+
+.about
+  display: none
+  position: fixed
+  top: 0
+  height: 100%
+  background: #ffffff
+  color: #000
+  font-size: 16px
+  padding: 10px
+  &-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 20px

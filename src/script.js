@@ -2,30 +2,39 @@
 
 window.addEventListener('DOMContentLoaded', ()=>{
   const headPage = document.querySelector('.head-page'),
-        title = document.querySelector('.head-page-description-title'),
+        title = document.querySelector('.head-page-description-headtitle'),
         subtitle = document.querySelector('.head-page-description-subtitle'),
         paragraph = document.querySelector('.head-page-description-paragraph'),
         headBtn = document.querySelectorAll('.head-page-panel-btn'),
         gallary = document.querySelector('.gallary'),
-        slider = document.querySelector('.slider'),
+        btnAboutMe = document.querySelector('#about-btn'),
         btnGallary = document.querySelector('#gallary-btn'),
         btnContacts = document.querySelectorAll('#contacts-btn'),
         btnCloseModal = document.querySelector('#modal-btn'),
         btnHome = document.querySelector('#home-btn');
 
-        
+      
 
   function start(){
+
     setTimeout( () => {
       title.style.opacity = '1'; 
       title.style.transition = '1.2s';
       subtitle.style.opacity = '1'; 
       subtitle.style.transition = '1.2s';
     }, 1000);
-    setTimeout(() => {
-      paragraph.style.opacity ='1';
-      paragraph.style.transition = '1.2s';
-    }, 1500);
+
+    if(window.innerWidth > 720){
+      setTimeout(() => {   
+        paragraph.style.opacity ='1';
+        paragraph.style.transition = '1.2s';
+      }, 1500);
+
+     
+      } else {
+        btnAboutMe.style.display = 'block';
+    }
+    
     setTimeout(() => {
       headBtn.forEach((e) => {
         e.style.opacity ='1';
@@ -59,6 +68,8 @@ window.addEventListener('DOMContentLoaded', ()=>{
       headPage.style.transition = '1s'; 
     },1100); 
   })
+
+
 
   start();
 
@@ -123,5 +134,17 @@ window.addEventListener('DOMContentLoaded', ()=>{
     e.addEventListener('click', showModal);
   });
   btnCloseModal.addEventListener('click', closeMopdal);
+
+
+  function showAboutMe(){
+    document.querySelector('.about').style.display = 'block';
+  }
+  
+  function closeAboutMe(){
+    document.querySelector('.about').style.display = 'none'
+  }
+
+  btnAboutMe.addEventListener('click', showAboutMe);
+  document.querySelector('.about-close-btn').addEventListener('click', closeAboutMe);
 
 })
