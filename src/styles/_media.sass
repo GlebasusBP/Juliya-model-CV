@@ -39,7 +39,7 @@
     width: 680px
 
   .head-page
-    padding: 40px 0 40px 0
+    padding: 50px 0 140px 0
     &-panel
       &-btn
         width: 150px
@@ -55,12 +55,50 @@
       &-paragraph
         font-size: 16px
 
+  .modal
+    &-wrapper
+      width: 300px
+      height: 300px
+      margin: 0 auto
+      padding: 10px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      gap: 15px
+      background-color: #fff
+      border-radius: 20px
+      box-shadow: 0 0 50px #000  
+    &-title
+      font-size: 24px
+
+    &-list
+      list-style-type: none
+      display: flex
+      flex-direction: column
+      gap: 10px
+      &-item
+        &-link
+          text-decoration: none
+        &-block
+          display: flex
+          align-items: center
+          gap: 15px
+          &-icon
+            width: 25px
+            height: 25px
+          &-text
+            color: #000
+            font-size: 18px
+            &:hover
+              text-shadow: 0 0 15px #000000
+
 @media  ( max-width: 720px )
   .container
     width: 480px
 
   .head-page
-    padding: 30px 0 30px 0
+    padding: 30px 0 130px 0
     &-panel
       width: 100%
       align-self: start
@@ -124,6 +162,9 @@
         font-weight: 100
       &-paragraph
         font-size: 14px
+
+  .modal
+    padding-top: 10px
   
 
 @media  ( max-width: 540px )
@@ -131,8 +172,9 @@
     width: 300px
 
   .head-page
-    background-size: 140%
-    background-position: right
+    background-size: 160vh
+    background-position: -250px
+    height: 100vh
     padding: 10px
     &-panel
       flex-direction: column
@@ -154,6 +196,7 @@
         font-weight: 100
       &-paragraph
         font-size: 12px
+        margin-bottom: 130px
 
   .gallary
     padding: 10px
@@ -192,24 +235,29 @@
 
 @media  ( max-width: 450px )
   .head-page
-    background-size: 150%
-    background-position: right 
-
-@media  ( max-width: 410px )
-  .head-page
-    background-size: 160%
+    background-position: -350px 
 
 @media  ( max-width: 380px )
   .head-page
-    background-size: 170%
+    background-position: -400px 
 
-@media  ( max-width: 355px )
-  .head-page
-    background-size: 185%
+// @media  ( max-width: 355px )
+//   .head-page
+//     background-size: 185%
 
 @media  ( max-width: 320px )
   body
     width: 320px
+  .head-page
+    background-size: 160vh
+    background-position: -500px
+    height: 100vh
+    &-description
+      &-title
+        margin-bottom: 100px
+      &-paragraph
+        margin-bottom: 20px
+    
 
 
 

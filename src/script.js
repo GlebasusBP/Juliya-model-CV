@@ -11,7 +11,9 @@ window.addEventListener('DOMContentLoaded', ()=>{
         btnGallary = document.querySelector('#gallary-btn'),
         btnContacts = document.querySelectorAll('#contacts-btn'),
         btnCloseModal = document.querySelector('#modal-btn'),
-        btnHome = document.querySelector('#home-btn');
+        btnHome = document.querySelector('#home-btn'),
+        about = document.querySelector('.about'),
+        aboutWrapper = document.querySelector('.about-wrapper');
 
       
 
@@ -137,11 +139,38 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
 
   function showAboutMe(){
-    document.querySelector('.about').style.display = 'block';
+    headPage.style.opacity = '0';
+    headPage.style.transition = '1s';
+    setTimeout(() => {
+      headPage.style.display = 'none';
+      about.style.display = 'block';
+    }, 1000);
+    setTimeout(() => {
+      about.style.opacity = '1';
+      about.style.transition = '1s'; 
+    },1100);
+    setTimeout(() => {
+      aboutWrapper.style.opacity = '1';
+      aboutWrapper.style.transition = '1s'; 
+    },2000); 
   }
   
   function closeAboutMe(){
-    document.querySelector('.about').style.display = 'none'
+    aboutWrapper.style.opacity = '0';
+    aboutWrapper.style.transition = '1s';
+    about.style.opacity = '0';
+    about.style.transition = '1s';
+    setTimeout(() => {
+      about.style.display = 'none';
+      headPage.style.display = 'block';
+    }, 1000);
+    setTimeout(() => {
+      headPage.style.opacity = '1';
+      headPage.style.transition = '1s' 
+    },1100);
+    // setTimeout(() => {
+    //   ; 
+    // },2000); 
   }
 
   btnAboutMe.addEventListener('click', showAboutMe);
