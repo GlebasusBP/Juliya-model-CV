@@ -76,16 +76,10 @@ window.addEventListener('DOMContentLoaded', ()=>{
       subtitle.style.transition = '1.2s';
     }, 1000);
 
-    if(window.innerWidth > 320){
       setTimeout(() => {   
         paragraph.style.opacity ='1';
         paragraph.style.transition = '1.2s';
       }, 1500);
-
-     
-    //   } else {
-    //     btnAboutMe.style.display = 'block';
-    }
     
     setTimeout(() => {
       headBtn.forEach((e) => {
@@ -150,25 +144,5 @@ window.addEventListener('DOMContentLoaded', ()=>{
     e.addEventListener('click', showModal);
   });
   btnCloseModal.addEventListener('click', closeMopdal);
-
-
-  // function showAboutMe(){
-  //   show(headPage, about);
-  //   setTimeout(() => {
-  //     aboutWrapper.style.opacity = '1';
-  //     aboutWrapper.style.transition = '1s'; 
-  //   },2000); 
-  // }
   
-  // function closeAboutMe(){
-  //   aboutWrapper.style.opacity = '0';
-  //   aboutWrapper.style.transition = '1s';
-  //   hide(headPage, about);
-  // }
-
-  // btnAboutMe.addEventListener('click', showAboutMe);
-  // btnCloseAbout.addEventListener('click', closeAboutMe);
-
-  
-
 })
