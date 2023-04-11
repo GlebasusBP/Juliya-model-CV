@@ -1,0 +1,118 @@
+.gallery
+  display: none
+  position: relative
+  opacity: 0
+  padding: 50px 0 50px 0
+  background: #00000019
+  &-grid
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(6, 1fr)
+    width: 100%
+    grid-gap: 15px
+    margin: 20px 0 
+
+    &__item
+      overflow: hidden
+      cursor: pointer
+      &>img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        scale: 1
+        transition: .3s
+      &:hover>img
+        scale: 1.2
+        transition: .3s
+
+      &-3
+        grid-column-start: 1
+        grid-column-end: 3
+        grid-row-start: 1
+        grid-row-end: 2
+      &-10
+        grid-column-start: 3
+        grid-column-end: 5
+        grid-row-start: 2
+        grid-row-end: 3
+      &-12
+        grid-column-start: 2 
+        grid-column-end: 4
+        grid-row-start: 4
+        grid-row-end: 5
+      &-14
+        grid-column-start: 1
+        grid-column-end: 3
+        grid-row-start: 6
+        grid-row-end: 7
+        
+.slider
+  position: fixed
+  display: none
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 100vw
+  height: 100vh
+  background-color: #000000f0
+  z-index: 100
+  top: 0
+  right: 0
+  &-close-btn
+    position: absolute
+    bottom: 80px
+    left: calc( 50vw - 250px/2 )
+  &-btn
+    position: absolute
+    top: calc( 50vh - 40px )
+    width: 80px
+    height: 80px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    &-prev
+      left: 20px
+    &-next
+      right: 20px
+    &-icon
+      &__prev
+        width: 40px
+        height: 40px
+        transform: rotate(-90deg)
+      &__next
+        width: 40px
+        height: 40px
+        transform: rotate(90deg)
+  &-view
+    display: block
+    &-window
+      width: 1200px 
+      height: 800px
+    &-image
+      max-width: 1200px
+      height: 100%
+      object-fit: contain
+     
+
+.active
+  display: block
+.transition
+  opacity: 1
+  transition: 2s
+  
+.slider-open
+  display: flex
+
+.up-btn
+  width: 80px
+  height: 80px
+  border-radius: 50%
+
+.form-up-btn
+  width: 80px
+  margin: 0 auto
+
+
+

@@ -16,50 +16,38 @@
       <div class="container">
         <div class="head-page-description">
           <div class="head-page-description-title">
-            <h1 class="head-page-description-headtitle">Yuliya Sapiazhynskaya</h1>
-            <h3 class="head-page-description-subtitle">photomodel</h3>
+            <h1 class="head-page-description-headtitle"></h1>
+            <h3 class="head-page-description-subtitle"></h3>
           </div>
-          <p class="head-page-description-paragraph">Hey there! My name is Yuliya, I'm 24 years old. 
-            I speak English, Chinese, Russian and Spanish fluently, I also study Latvian and Czech. 
-            I have traveled, lived, studied and worked in 15 countries such as China, Czech Republic, Latvia, Spain, Italy, Belarus, etc.
-            As a very creative person I see the meaning of life in art: I dance, photograph, do modelling, play in theater and write. 
-            I'm a professional in education and linguistics, management and communication. 
-            I'm engaged in self-development, constantly challenging myself; I'm not afraid to get out of my comfort zone and think outside the box.
+          <p class="head-page-description-paragraph">
           </p>
           <div class="head-page-panel">
-            <button class="button head-page-panel-btn" id="about-btn">About Me</button>
-            <button class="button head-page-panel-btn" id="gallary-btn">Gallery</button>
-            <button class="button head-page-panel-btn" id="contacts-btn">Contacts</button>
+            <div class="head-page-panel__btn">
+              <!-- <button class="button head-page-panel-btn about-btn"></button> -->
+              <button class="button head-page-panel-btn gallery-btn"></button>
+              <button class="button head-page-panel-btn contacts-btn"></button>
+            </div>
+            <div class="head-page-panel__btn-lang">
+              <button class="button head-page-panel-btn eng-btn lang-active"></button>
+              <button class="button head-page-panel-btn rus-btn"></button>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="gallary">
-      <div class="container">
-        <div class="slider">
-          <div class="slider-view">
-            <button class="button slider-btn">
-              <img src="assets/images/arrow.svg" alt="back" class="slider-btn-icon__prev">
-            </button>
-            <div class="slider-view-window">
-              <img src="assets/images/1.jpg" alt="1" class="slider-view-image active">
-              <img src="assets/images/2.jpg" alt="2" class="slider-view-image">
-              <img src="assets/images/3.jpg" alt="3" class="slider-view-image">
-              <img src="assets/images/4.jpg" alt="4" class="slider-view-image">
-              <img src="assets/images/5.jpg" alt="5" class="slider-view-image">
-              <img src="assets/images/6.jpg" alt="6" class="slider-view-image">
-              <img src="assets/images/7.jpg" alt="7" class="slider-view-image">
-              <img src="assets/images/8.jpg" alt="8" class="slider-view-image">
-            </div>
-            <button class="button slider-btn">
-              <img src="assets/images/arrow.svg" alt="next" class="slider-btn-icon__next">
-            </button>
-          </div>
-          <div class="head-page-panel">
-            <button class="button head-page-panel-btn" id="home-btn">Home</button>
-            <button class="button head-page-panel-btn" id="contacts-btn">Contacts</button>
+    <section class="gallery" id="gallery">
+      <div class="container container-gallery">
+        <div class="head-page-panel gallery-btns">
+          <div class="head-page-panel__btn">
+            <button class="button head-page-panel-btn home-btn"></button>
+            <button class="button head-page-panel-btn contacts-btn"></button>
           </div>
         </div>
+        <div class="gallery-grid">
+        </div>
+        <form action="#gallery" class="form-up-btn">
+          <button class="button head-page-panel-btn up-btn">UP</button>
+        </form>
       </div>
     </section>
     <section class="modal">
@@ -107,21 +95,29 @@
             </a>
           </li>
         </ul>
-        <button class="button modal-btn" id="modal-btn">Close</button>
+        <button class="button modal-btn">Close</button>
       </div>
     </section>
-    <div class="about">
+    <!-- <section class="about">
       <div class="about-wrapper">
-        <p class="about-text">Hey there! My name is Yuliya, I'm 24 years old. 
-          I speak English, Chinese, Russian and Spanish fluently, I also study Latvian and Czech. 
-          I have traveled, lived, studied and worked in 15 countries such as China, Czech Republic, Latvia, Spain, Italy, Belarus, etc.
-          As a very creative person I see the meaning of life in art: I dance, photograph, model, write and am involved in the theater. 
-          I'm a professional in education and linguistics, management and communication. 
-          I'm engaged in self-development, constantly challenging myself; I'm not afraid to get out of my comfort zone and think outside the box.
-        </p>
-        <button class="button about-close-btn" id="about-close-btn">Close</button>
+        <p class="about-text"></p>
+        <button class="button about-close-btn">Close</button>
       </div>
-    </div>
+    </section> -->
   </main>
+  <div class="slider">
+    <div class="slider-view">
+      <button class="button slider-btn slider-btn-prev">
+        <img src="assets/images/arrow.svg" alt="back" class="slider-btn-icon__prev">
+      </button>
+      <div class="slider-view-window">
+      </div>
+      <button class="button slider-btn slider-btn-next">
+        <img src="assets/images/arrow.svg" alt="next" class="slider-btn-icon__next">
+      </button>
+    </div>
+    
+    <button class="button slider-close-btn">Close</button>
+  </div>
 </body>
 </html>

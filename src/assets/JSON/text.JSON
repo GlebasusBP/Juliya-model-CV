@@ -1,0 +1,32 @@
+ {
+  "eng":
+    {
+    "title": "Yuliya Sapiazhynskaya",
+    "subtitle": "photomodel",
+    "about": "Hey there! My name is Yuliya, I'm 24 years old. I speak English, Chinese, Russian and Spanish fluently, I also study Latvian and Czech. I have traveled, lived, studied and worked in 20 countries such as China, Czech Republic, Latvia, Spain, Italy, Georgia, Belarus, etc. As a very creative person I see the meaning of life in art: I dance, photograph, model, write and am involved in the theater. I'm a professional in education and linguistics, management and communication. I'm engaged in self-development, constantly challenging myself; I'm not afraid to get out of my comfort zone and think outside the box.",
+    "modalTitle": "Contacts",
+    "btn":{
+      "contactsBtn": "Contacts",
+      "galleryBtn": "Gallery",
+      "aboutBtn": "About Me",
+      "homeBtn": "Home",
+      "engBtn": "ENG",
+      "rusBtn": "RUS"
+    }
+  },
+
+  "rus": {
+    "title": "Юлия Сапежинская",
+    "subtitle": "фотомодель",
+    "about": "Всем привет, я Юлия, мне 24 года. Я бегло говорю на английском, китайском, русском и испанском, также учу латышский и чешский. Я путешествовала, жила, училась и работала в 20-ти странах, таких, как Китай, Чехия, Латвия, Испания, Италия, Грузия и Беларусь. Я очень креативная и вижу смысл жизни в искусстве: танцую, фотографирую, позирую, пишу и играю в театре. Профессионал в сфере образования и лингвистики, менеджмента и коммуникации. Постоянно занимаюсь саморазвитием, бросаю себе вызовы; не боюсь выходить из зоны комфорта и мыслить нестандартно.",
+    "modalTitle": "Контакты",
+    "btn":{
+      "contactsBtn": "Контакты",
+      "galleryBtn": "Галлерея",
+      "aboutBtn": "Обо Мне",
+      "homeBtn": "Главная",
+      "engBtn": "АНГ",
+      "rusBtn": "РУС"
+    }
+  }
+}

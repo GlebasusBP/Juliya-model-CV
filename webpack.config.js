@@ -18,7 +18,11 @@ const config = {
         path: path.resolve(__dirname, 'dist'),
     },
     devServer: {
-        open: true,
+        open: {
+            app: {
+                name: 'chrome',
+            }
+        },
         host: 'localhost',
     },
     plugins: [
